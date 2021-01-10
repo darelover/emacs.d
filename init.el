@@ -133,7 +133,6 @@
   ([remap describe-key] . helpful-key))
 
 (use-package evil
-  :disabled
   :config
   (evil-mode 1))
 (use-package evil-collection
@@ -141,6 +140,7 @@
   :after evil
   :config
   (evil-collection-init))
+;; TODO: use verticaal line as cursor for normal mode in evil-mode
 
 (use-package undo-tree
     :defer 5
