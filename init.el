@@ -82,12 +82,12 @@
   (clm/toggle-command-log-buffer))
 
 ;; company uses backends to provide completions and a frontend to visualise the list of completions suggestions
-;; TODO: add company frontend
 (use-package company
   :config
   ;; Zero delay when pressing tab
   (setq company-idle-delay 0)
   (add-hook 'after-init-hook 'global-company-mode))
+;; TODO: add company frontend such as https://github.com/company-mode/company-quickhelp ot company-box
 ;; company-box needs emacs 26
 ;; (use-package company-box
 ;;   :hook (company-mode . company-box-mode))
@@ -224,6 +224,10 @@
 ;; TODO: bind to better keys which all smooth cycling between naming schemes
 ;; TODO: bind keys to force a particular naming scheme
 ;; TODO: checkout https://github.com/ninrod/evil-string-inflection and https://github.com/strickinato/evil-briefcase for evil mode bindings
+
+;; TODO: rotate text
+
+;; TODO: auto import/include
 
 (defun find-config ()
   "Edit config.org"
