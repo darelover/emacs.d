@@ -5,14 +5,7 @@
 
 ;; maxmise emacs frame on startup
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(doom-modeline-mode nil)
- '(initial-frame-alist '((fullscreen . maximized)))
- '(package-selected-packages
-   '(flycheck company-box yasnippet highlight-parentheses paredit-everywhere paredit magit projectile undo-tree evil ivy-prescient prescient helpful ivy-rich rainbow-delimiters doom-modeline counsel ivy diminish company which-key use-package swiper command-log-mode)))
+ '(initial-frame-alist '((fullscreen . maximized))))
 
 ;; do not show the startup screen
 (setq inhibit-startup-message t)
@@ -224,6 +217,13 @@
   :config
   (add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
   (yas-global-mode 1))
+
+(use-package string-inflection
+  :bind ("C-c C-u" . string-inflection-all-cycle))
+;; TODO: use string-inflection-java-style-cycle for java major mode
+;; TODO: bind to better keys which all smooth cycling between naming schemes
+;; TODO: bind keys to force a particular naming scheme
+;; TODO: checkout https://github.com/ninrod/evil-string-inflection and https://github.com/strickinato/evil-briefcase for evil mode bindings
 
 (defun find-config ()
   "Edit config.org"
