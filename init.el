@@ -5,7 +5,14 @@
 
 ;; maxmise emacs frame on startup
 (custom-set-variables
- '(initial-frame-alist '((fullscreen . maximized))))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(doom-modeline-mode nil)
+ '(initial-frame-alist '((fullscreen . maximized)))
+ '(package-selected-packages
+   '(flycheck company-box yasnippet highlight-parentheses paredit-everywhere paredit magit projectile undo-tree evil ivy-prescient prescient helpful ivy-rich rainbow-delimiters doom-modeline counsel ivy diminish company which-key use-package swiper command-log-mode)))
 
 ;; do not show the startup screen
 (setq inhibit-startup-message t)
@@ -81,6 +88,8 @@
   (global-command-log-mode)
   (clm/toggle-command-log-buffer))
 
+;; company uses backends to provide completions and a frontend to visualise the list of completions suggestions
+;; TODO: add company frontend
 (use-package company
   :config
   ;; Zero delay when pressing tab
@@ -206,6 +215,10 @@
   :config
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
   (add-hook 'lisp-mode-hook 'rainbow-delimiters-mode))
+
+(use-package flycheck
+  :init (global-flycheck-mode))
+;; TOOD: disable flycheck warnings and info error levels
 
 (use-package yasnippet
   :config
