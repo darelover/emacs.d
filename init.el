@@ -69,11 +69,16 @@
 (use-package all-the-icons)
 ;; run (all-the-icons-install-fonts) to install the fonts
 
+(use-package neotree
+  :config
+  (global-set-key (kbd "<f8>") 'neotree-toggle))
+
 ;; use theme
 ;; (load-theme 'tango-dark)
 (use-package doom-themes
   :config
-  (load-theme 'doom-one t))
+  (load-theme 'doom-one t)
+  (doom-themes-neotree-config))
 
 (use-package doom-modeline
   :disabled
