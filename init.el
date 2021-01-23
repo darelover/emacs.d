@@ -87,6 +87,8 @@
   :custom
   (doom-modeline-height 10))
 
+;; TODO: move minibuffer to top right as in doom-one's screenshot
+
 (use-package command-log-mode
   :config
   (global-command-log-mode)
