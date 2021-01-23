@@ -35,9 +35,6 @@
 ;; set font face and size
 (set-face-attribute 'default nil :font "Hasklug Nerd Font" :height 210)
 
-;; use theme
-(load-theme 'tango-dark)
-
 ;; delete trailing whitespaces before saving a file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -68,6 +65,12 @@
 (require 'use-package)
 ;; "ensure" packages by default
 (setq use-package-always-ensure t)
+
+;; use theme
+;; (load-theme 'tango-dark)
+(use-package doom-themes
+  :config
+  (load-theme 'doom-one t))
 
 (use-package doom-modeline
   :disabled
