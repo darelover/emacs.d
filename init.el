@@ -66,6 +66,9 @@
 ;; "ensure" packages by default
 (setq use-package-always-ensure t)
 
+(use-package all-the-icons)
+;; run (all-the-icons-install-fonts) to install the fonts
+
 ;; use theme
 ;; (load-theme 'tango-dark)
 (use-package doom-themes
