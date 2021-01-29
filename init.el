@@ -23,7 +23,7 @@
 (setq-default cursor-type 'bar)
 
 ;; highlight current line
-;; (global-hl-line-mode t)
+(global-hl-line-mode t)
 
 ;; display line numbers
 (global-display-line-numbers-mode)
