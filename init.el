@@ -170,8 +170,8 @@
     (setq projectile-project-search-path '("~/cventcode")))
   (setq projectile-switch-project-action #'projectile-dired))
 (use-package counsel-projectile
-  :disabled
-  :after projectile)
+  :after projectile
+  :config (counsel-projectile-mode))
 
 (use-package magit)
 (use-package evil-magit
