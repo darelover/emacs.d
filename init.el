@@ -254,3 +254,7 @@
   :if (memq window-system '(mac ns x))
   :config
   (exec-path-from-shell-initialize))
+
+;; use prettier to format current buffer
+(use-package prettier-js
+  :hook (js-mode . prettier-js-mode))
