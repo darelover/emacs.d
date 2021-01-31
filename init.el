@@ -198,7 +198,7 @@
   (add-to-list 'org-structure-template-alist '("sh" . "src sh"))
   (add-to-list 'org-structure-template-alist '("el" . "src emacs-lisp")))
 
-;; highlight matching parenthesis
+;; highlight matching parenthesis, bracket and brace
 (show-paren-mode 1)
 (setq show-paren-delay 0)
 (use-package paredit
