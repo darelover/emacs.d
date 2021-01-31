@@ -1,6 +1,7 @@
 .org-id-locations
 bookmarks
 elpa/
+eshell/
 places
 projectile-bookmarks.eld
 recentf
