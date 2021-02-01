@@ -1,1 +1,40 @@
 I kept messing up my config since me is still an emacs noob so here goes nothing
+
+* TODO modeline
+- https://github.com/seagle0128/doom-modeline
+- https://github.com/TheBB/spaceline
+* TODO move minibuffer to top right as in doom-one's screenshot
+* TODO add company frontend such as https://github.com/company-mode/company-quickhelp or company-box
+#+begin_src emacs-lisp
+;; company-box needs emacs 26
+(use-package company-box
+  :hook (company-mode . company-box-mode))
+#+end_src
+* TODO string-inflection
+** TODO use string-inflection-java-style-cycle for java major mode
+** TODO bind ~string-inflection-all-cycle~ and ~string-inflection-java-style-cycle~ to keys which allow smooth cycling between naming schemes
+** TODO bind keys to force a particular naming scheme
+** TODO checkout https://github.com/ninrod/evil-string-inflection and https://github.com/strickinato/evil-briefcase for evil mode bindings
+* TODO better paging for which-key
+* TODO disable flycheck warnings and info error levels
+* TODO [[https://github.com/abo-abo/avy][avy]]
+* TODO rotate text
+* TODO auto import/include
+* TODO frontend programming with js
+- https://github.com/mooz/js2-mode
+- https://github.com/felipeochoa/rjsx-mode
+- https://github.com/fxbois/web-mode
+* TODO replace all keybindings (even use-package bind) with [[https://github.com/noctuid/general.el][general.el]]
+* TODO color code nested plain lists in org mode
+* TODO fuzzy completions for company
+* TODO descriptive completions for company
+* TODO circular lists for counsel/swiper/ivy lists - move to last result from first result and vice versa
+* TODO checkout hydra, ivy-hydra
+* TODO checkout winner-mode
+* TODO https://github.com/raxod502/straight.el
+* TODO https://github.com/myuhe/org-gcal.el
+* TODO make decision - multiple cursors vs macros vs regex
+- https://github.com/magnars/multiple-cursors.emacs-lisp
+- https://github.com/gabesoft/evil-mc
+* TODO make decision - hotkeys vs leader key
+- emacs super, hyper modifier keys: http://ergoemacs.org/emacs/emacs_hyper_super_keys.html

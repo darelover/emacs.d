@@ -87,8 +87,6 @@
   :custom
   (doom-modeline-height 10))
 
-;; TODO: move minibuffer to top right as in doom-one's screenshot
-
 (use-package command-log-mode
   :config
   (global-command-log-mode)
@@ -100,10 +98,6 @@
   ;; Zero delay when pressing tab
   (setq company-idle-delay 0)
   (add-hook 'after-init-hook 'global-company-mode))
-;; TODO: add company frontend such as https://github.com/company-mode/company-quickhelp ot company-box
-;; company-box needs emacs 26
-;; (use-package company-box
-;;   :hook (company-mode . company-box-mode))
 
 (use-package which-key
   :init
@@ -153,7 +147,6 @@
   :after evil
   :config
   (evil-collection-init))
-;; TODO: use verticaal line as cursor for normal mode in evil-mode
 
 (use-package undo-tree
     :defer 5
@@ -224,7 +217,6 @@
 
 (use-package flycheck
   :init (global-flycheck-mode))
-;; TOOD: disable flycheck warnings and info error levels
 
 (use-package yasnippet
   :config
@@ -233,14 +225,6 @@
 
 (use-package string-inflection
   :bind ("C-c C-u" . string-inflection-all-cycle))
-;; TODO: use string-inflection-java-style-cycle for java major mode
-;; TODO: bind to better keys which all smooth cycling between naming schemes
-;; TODO: bind keys to force a particular naming scheme
-;; TODO: checkout https://github.com/ninrod/evil-string-inflection and https://github.com/strickinato/evil-briefcase for evil mode bindings
-
-;; TODO: rotate text
-
-;; TODO: auto import/include
 
 (defun find-config ()
   "Edit config.org"
