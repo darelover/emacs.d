@@ -223,6 +223,9 @@
   (add-to-list 'yas-snippet-dirs "~/.emacs.d/snippets")
   (yas-global-mode 1))
 
+(use-package ledger-mode
+  :mode ("\\.ledger\\'"))
+
 (use-package string-inflection
   :bind ("C-c C-u" . string-inflection-all-cycle))
 
