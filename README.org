@@ -38,3 +38,4 @@ I kept messing up my config since me is still an emacs noob so here goes nothing
 - https://github.com/gabesoft/evil-mc
 * TODO make decision - hotkeys vs leader key
 - emacs super, hyper modifier keys: http://ergoemacs.org/emacs/emacs_hyper_super_keys.html
+* TODO use org-capture with ledger-mode
