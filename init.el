@@ -113,7 +113,9 @@
   ;; add recent files and bookmarks to the ivy-switch-buffer
   (setq ivy-use-virtual-buffers t
   ;; wrap around completions provided by ivy as part of swiper/counsel
-	ivy-wrap t)
+	ivy-wrap t
+  ;; use M-<number> to select completion at <number>
+	company-show-numbers t)
   ;; displays the current and total number in the collection in the prompt
   (setq ivy-count-format "%d/%d ")
   (ivy-mode 1))
