@@ -94,6 +94,8 @@
 
 ;; company uses backends to provide completions and a frontend to visualise the list of completions suggestions
 (use-package company
+  :init
+  (setq company-selection-wrap-around t)
   :config
   ;; Zero delay when pressing tab
   (setq company-idle-delay 0)
