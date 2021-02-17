@@ -10,6 +10,10 @@ I kept messing up my config since me is still an emacs noob so here goes nothing
 (use-package company-box
   :hook (company-mode . company-box-mode))
 #+end_src
+* TODO company
+tab company-complete-common
+ret company-complete-selection
+https://emacs.stackexchange.com/questions/13286/how-can-i-stop-the-enter-key-from-triggering-a-completion-in-company-mode
 * TODO string-inflection
 ** TODO use string-inflection-java-style-cycle for java major mode
 ** TODO bind ~string-inflection-all-cycle~ and ~string-inflection-java-style-cycle~ to keys which allow smooth cycling between naming schemes
