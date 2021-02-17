@@ -111,7 +111,9 @@
 (use-package ivy
   :config
   ;; add recent files and bookmarks to the ivy-switch-buffer
-  (setq ivy-use-virtual-buffers t)
+  (setq ivy-use-virtual-buffers t
+  ;; wrap around completions provided by ivy as part of swiper/counsel
+	ivy-wrap t)
   ;; displays the current and total number in the collection in the prompt
   (setq ivy-count-format "%d/%d ")
   (ivy-mode 1))

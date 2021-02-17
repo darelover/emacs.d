@@ -28,7 +28,6 @@ I kept messing up my config since me is still an emacs noob so here goes nothing
 * TODO color code nested plain lists in org mode
 * TODO fuzzy completions for company
 * TODO descriptive completions for company
-* TODO circular lists for counsel/swiper/ivy lists - move to last result from first result and vice versa
 * TODO checkout hydra, ivy-hydra
 * TODO checkout winner-mode
 * TODO https://github.com/raxod502/straight.el
