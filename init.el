@@ -89,8 +89,8 @@
 
 (use-package command-log-mode
   :config
-  (global-command-log-mode)
-  (clm/toggle-command-log-buffer))
+  (global-command-log-mode))
+  ;; (clm/toggle-command-log-buffer))
 
 ;; company uses backends to provide completions and a frontend to visualise the list of completions suggestions
 (use-package company
