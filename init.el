@@ -191,7 +191,7 @@
   :hook (org-mode . org-mode-setup)
   :config
   (setq org-capture-templates
-	`(("f" "Fleeting Note" item (file+olp+datetree "~/Dropbox/Orgzly/fleeting.org")
+	`(("f" "Fleeting Note" item (file+olp+datetree "~/Dropbox/org/fleeting.org")
            "%?" :prepend :kill-buffer)))
   (setq org-modules
 	`(org-tempo))
